@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of Your Feeling</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+
+</head>
+<body>
+
+     <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <h1>Quote of your feeling</h1>
+    </nav>
+
+    <main class="quote-container">
+        <button class="nav-btn" id="prev-btn">←</button>
+        
+        <div class="quote-content">
+            <p class="quote-text" id="quote">"The only way to do great work is to love what you do."</p>
+            <p class="quote-author" id="author">- Steve Jobs</p>
+            <div class="quote-tags" id="tags">
+                <span class="tag">#Motivation</span>
+                <span class="tag">#Work</span>
+            </div>
+        </div>
+        
+        <button class="nav-btn" id="next-btn">→</button>
+    </main>
+
+
+<!-- Tambahkan ini di <main> setelah quote-container -->
+<section class="quote-library">
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Cari quote...">
+  </div>
+
+  <!-- Tag Categories (Scrollable) -->
+  <div class="tags-scroll-container">
+    <div class="tags-wrapper" id="tags-wrapper">
+      <!-- Tags akan di-generate oleh JS -->
+    </div>
+    <button class="scroll-btn left">‹</button>
+    <button class="scroll-btn right">›</button>
+  </div>
+
+  <!-- Quote List -->
+  <div class="quote-list" id="quote-list">
+    <!-- Quote items akan di-generate oleh JS -->
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination" id="pagination">
+    <!-- Pagination buttons -->
+  </div>
+</section>
+
+
+
+
+    
+
+    <footer class="footer">
+        <p>© 2023 Quote of Your Feeling</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
